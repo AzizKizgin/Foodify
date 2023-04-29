@@ -11,6 +11,7 @@
 		E0DB39B629FD8ECE00141EFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB39B529FD8ECE00141EFA /* ContentView.swift */; };
 		E0DB39B829FD8ECF00141EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0DB39B729FD8ECF00141EFA /* Assets.xcassets */; };
 		E0DB39BB29FD8ECF00141EFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0DB39BA29FD8ECF00141EFA /* Preview Assets.xcassets */; };
+		E0DB39C229FD8F0D00141EFA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E0DB39C129FD8F0D00141EFA /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		E0DB39B529FD8ECE00141EFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E0DB39B729FD8ECF00141EFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0DB39BA29FD8ECF00141EFA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E0DB39C129FD8F0D00141EFA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 		E0DB39A729FD8ECE00141EFA = {
 			isa = PBXGroup;
 			children = (
+				E0DB39C129FD8F0D00141EFA /* .gitignore */,
 				E0DB39B229FD8ECE00141EFA /* Foodify */,
 				E0DB39B129FD8ECE00141EFA /* Products */,
 			);
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0DB39BB29FD8ECF00141EFA /* Preview Assets.xcassets in Resources */,
+				E0DB39C229FD8F0D00141EFA /* .gitignore in Resources */,
 				E0DB39B829FD8ECF00141EFA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
