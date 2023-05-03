@@ -7,20 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E018EA3129FEF62900248490 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E018EA3029FEF62900248490 /* HexColor.swift */; };
+		E018EA3329FF121200248490 /* Meals.swift in Sources */ = {isa = PBXBuildFile; fileRef = E018EA3229FF121200248490 /* Meals.swift */; };
+		E01BE4C72A01949800404A95 /* SearchBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01BE4C62A01949800404A95 /* SearchBox.swift */; };
+		E01BE4CB2A0195B900404A95 /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01BE4CA2A0195B900404A95 /* CategoryList.swift */; };
+		E01BE4CD2A0196EA00404A95 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01BE4CC2A0196EA00404A95 /* Header.swift */; };
+		E01BE4D12A01A3EC00404A95 /* MealByCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01BE4D02A01A3EC00404A95 /* MealByCategory.swift */; };
+		E03D940029FE827A00C9B80B /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03D93FF29FE827A00C9B80B /* Urls.swift */; };
+		E03D940229FE8A0B00C9B80B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03D940129FE8A0B00C9B80B /* Category.swift */; };
+		E03D940429FE8B4300C9B80B /* CategoryApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03D940329FE8B4300C9B80B /* CategoryApiService.swift */; };
+		E03D940629FE8F7A00C9B80B /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03D940529FE8F7A00C9B80B /* Home.swift */; };
+		E03D940829FECB8A00C9B80B /* CategoryItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03D940729FECB8A00C9B80B /* CategoryItemList.swift */; };
 		E0DB39B429FD8ECE00141EFA /* FoodifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB39B329FD8ECE00141EFA /* FoodifyApp.swift */; };
-		E0DB39B629FD8ECE00141EFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB39B529FD8ECE00141EFA /* ContentView.swift */; };
 		E0DB39B829FD8ECF00141EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0DB39B729FD8ECF00141EFA /* Assets.xcassets */; };
 		E0DB39BB29FD8ECF00141EFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0DB39BA29FD8ECF00141EFA /* Preview Assets.xcassets */; };
 		E0DB39C229FD8F0D00141EFA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E0DB39C129FD8F0D00141EFA /* .gitignore */; };
+		E0DB39CA29FD953C00141EFA /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB39C929FD953C00141EFA /* Meal.swift */; };
+		E0DB39CC29FD9DC700141EFA /* MealApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB39CB29FD9DC700141EFA /* MealApiService.swift */; };
+		E0DB39CE29FDA5B300141EFA /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB39CD29FDA5B300141EFA /* AppViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E018EA3029FEF62900248490 /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
+		E018EA3229FF121200248490 /* Meals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meals.swift; sourceTree = "<group>"; };
+		E01BE4C62A01949800404A95 /* SearchBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBox.swift; sourceTree = "<group>"; };
+		E01BE4CA2A0195B900404A95 /* CategoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryList.swift; sourceTree = "<group>"; };
+		E01BE4CC2A0196EA00404A95 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		E01BE4D02A01A3EC00404A95 /* MealByCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealByCategory.swift; sourceTree = "<group>"; };
+		E03D93FF29FE827A00C9B80B /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
+		E03D940129FE8A0B00C9B80B /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		E03D940329FE8B4300C9B80B /* CategoryApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryApiService.swift; sourceTree = "<group>"; };
+		E03D940529FE8F7A00C9B80B /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		E03D940729FECB8A00C9B80B /* CategoryItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemList.swift; sourceTree = "<group>"; };
 		E0DB39B029FD8ECE00141EFA /* Foodify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DB39B329FD8ECE00141EFA /* FoodifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodifyApp.swift; sourceTree = "<group>"; };
-		E0DB39B529FD8ECE00141EFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E0DB39B729FD8ECF00141EFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0DB39BA29FD8ECF00141EFA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E0DB39C129FD8F0D00141EFA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		E0DB39C929FD953C00141EFA /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		E0DB39CB29FD9DC700141EFA /* MealApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealApiService.swift; sourceTree = "<group>"; };
+		E0DB39CD29FDA5B300141EFA /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +60,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E01BE4C52A01948400404A95 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E01BE4C62A01949800404A95 /* SearchBox.swift */,
+				E01BE4CC2A0196EA00404A95 /* Header.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E01BE4C82A01959100404A95 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E01BE4C92A01959900404A95 /* Components */,
+				E03D940529FE8F7A00C9B80B /* Home.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E01BE4C92A01959900404A95 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E01BE4CA2A0195B900404A95 /* CategoryList.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		E0DB39A729FD8ECE00141EFA = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +106,12 @@
 		E0DB39B229FD8ECE00141EFA /* Foodify */ = {
 			isa = PBXGroup;
 			children = (
+				E0DB39C829FD952000141EFA /* Utilities */,
+				E0DB39C729FD950800141EFA /* Services */,
+				E0DB39C629FD94C700141EFA /* ViewModels */,
+				E0DB39C529FD94BD00141EFA /* Models */,
+				E0DB39C429FD94B000141EFA /* Views */,
 				E0DB39B329FD8ECE00141EFA /* FoodifyApp.swift */,
-				E0DB39B529FD8ECE00141EFA /* ContentView.swift */,
 				E0DB39B729FD8ECF00141EFA /* Assets.xcassets */,
 				E0DB39B929FD8ECF00141EFA /* Preview Content */,
 			);
@@ -68,6 +124,53 @@
 				E0DB39BA29FD8ECF00141EFA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E0DB39C429FD94B000141EFA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E01BE4C82A01959100404A95 /* Home */,
+				E01BE4C52A01948400404A95 /* Components */,
+				E018EA3229FF121200248490 /* Meals.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E0DB39C529FD94BD00141EFA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E0DB39C929FD953C00141EFA /* Meal.swift */,
+				E03D940129FE8A0B00C9B80B /* Category.swift */,
+				E01BE4D02A01A3EC00404A95 /* MealByCategory.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E0DB39C629FD94C700141EFA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E0DB39CD29FDA5B300141EFA /* AppViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E0DB39C729FD950800141EFA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E0DB39CB29FD9DC700141EFA /* MealApiService.swift */,
+				E03D940329FE8B4300C9B80B /* CategoryApiService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E0DB39C829FD952000141EFA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E03D93FF29FE827A00C9B80B /* Urls.swift */,
+				E03D940729FECB8A00C9B80B /* CategoryItemList.swift */,
+				E018EA3029FEF62900248490 /* HexColor.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +244,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0DB39B629FD8ECE00141EFA /* ContentView.swift in Sources */,
+				E018EA3329FF121200248490 /* Meals.swift in Sources */,
+				E01BE4CB2A0195B900404A95 /* CategoryList.swift in Sources */,
+				E0DB39CC29FD9DC700141EFA /* MealApiService.swift in Sources */,
+				E018EA3129FEF62900248490 /* HexColor.swift in Sources */,
+				E0DB39CA29FD953C00141EFA /* Meal.swift in Sources */,
+				E03D940029FE827A00C9B80B /* Urls.swift in Sources */,
+				E03D940629FE8F7A00C9B80B /* Home.swift in Sources */,
+				E03D940429FE8B4300C9B80B /* CategoryApiService.swift in Sources */,
+				E0DB39CE29FDA5B300141EFA /* AppViewModel.swift in Sources */,
+				E01BE4CD2A0196EA00404A95 /* Header.swift in Sources */,
+				E03D940829FECB8A00C9B80B /* CategoryItemList.swift in Sources */,
+				E01BE4D12A01A3EC00404A95 /* MealByCategory.swift in Sources */,
 				E0DB39B429FD8ECE00141EFA /* FoodifyApp.swift in Sources */,
+				E03D940229FE8A0B00C9B80B /* Category.swift in Sources */,
+				E01BE4C72A01949800404A95 /* SearchBox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
