@@ -8,49 +8,61 @@
 import Foundation
 
 class MealApiService {
-    private func fetchMeals(endPoint: String, completion: @escaping ([Meal]?, Error?) -> Void) {
+    private func fetchData<T: Decodable>(endPoint: String, completion: @escaping (T?, Error?) -> Void) {
         guard let url = URL(string: endPoint) else {
             completion(nil, NSError(domain: "", code: -1, userInfo: nil))
             return
         }
-
+        
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data else {
                 completion(nil, error)
                 return
             }
-
+            
             do {
-                let mealResponse = try JSONDecoder().decode(MealResponse.self, from: data)
-                let meals = mealResponse.meals
-                completion(meals, nil)
+                let decodedData = try JSONDecoder().decode(T.self, from: data)
+                completion(decodedData, nil)
             } catch {
                 completion(nil, error)
             }
         }.resume()
     }
+
     
     func searchMealByName(name: String, completion: @escaping ([Meal]?, Error?) -> Void) {
         let url = Urls.search+"?s=\(name)"
-        fetchMeals(endPoint: url){
-            result, error in
-            guard let meals = result else {
+        fetchData(endPoint: url){
+        (result:MealResponse?, error) in
+            guard let mealsResponse = result else {
                 completion(nil, error)
                 return
             }
-            completion(meals, nil)
+            completion(mealsResponse.meals, nil)
         }
     }
     
     func searchMealById(id:Int,completion: @escaping (Meal?, Error?) -> Void){
         let url = Urls.detailById+"?i=\(id)"
-        fetchMeals(endPoint: url){
-            result, error in
-            guard let meal = result else{
+        fetchData(endPoint: url){
+            (result:MealResponse?, error) in
+            guard let mealResponse = result else{
                 completion(nil,error)
                 return
             }
-            completion(meal[0],nil)
+            completion(mealResponse.meals[0],nil)
+        }
+    }
+    
+    func searchMealByCategory(category:String,completion: @escaping ([MealByCategory]?,Error?) -> Void){
+        let url = Urls.filter+"?c=\(category)"
+        fetchData(endPoint: url){
+            (result:MealByCategoryResponse?, error )in
+            guard let mealsResponse = result else{
+                completion(nil,error)
+                return
+            }
+            completion(mealsResponse.meals,nil)
         }
     }
 }
