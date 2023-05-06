@@ -11,23 +11,25 @@ struct Meals: View {
     @ObservedObject var appViewModal = AppViewModal()
     @State var searchText = ""
     let text : String
+    let color: Color
     var body: some View {
-        NavigationView{
+        VStack{
             ScrollView{
                 Text(text)
-                SearchBox(searchText: $searchText)
+                SearchBox(searchText: $searchText,onSearch: onSearch)
                 ForEach(appViewModal.mealsByCategory, id:\.id){
                     meal in
-                    NavigationLink(destination: Home()){
+                    NavigationLink(destination: MealDetail(id: meal.id)){
                         ZStack{
                             RoundedRectangle(cornerRadius: 20,style: .continuous)
-                                .fill(.red.opacity(0.4))
+                                .fill(color)
                             HStack() {
                                     AsyncImage(url: URL(string: meal.image)) { image in
                                         image.resizable()
                                             .aspectRatio(contentMode: .fit)
-                                            .frame(height: 150)
+                                            .frame(height: 160)
                                             .clipped()
+                                            .cornerRadius(20)
                                     } placeholder: {
                                         ProgressView()
                                     }
@@ -49,14 +51,17 @@ struct Meals: View {
             }.onAppear{
                 appViewModal.getMealByCategory(category: text)
             }
-        }.edgesIgnoringSafeArea(.top)
+        }
+    }
+    func onSearch(text: String){
         
     }
+    
 }
 
 
 struct Meals_Previews: PreviewProvider {
     static var previews: some View {
-        Meals(text: "breakfast")
+        Meals(text: "breakfast",color: Color(.red))
     }
 }

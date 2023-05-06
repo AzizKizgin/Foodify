@@ -12,7 +12,7 @@ struct CategoryList: View {
     var body: some View {
         ForEach(categoryList, id:\.id){
             category in
-            NavigationLink(destination: Meals(text:"\(category.name)")){
+            NavigationLink(destination: Meals(text:"\(category.name)", color:category.color)){
                 ZStack{
                     RoundedRectangle(cornerRadius: 20,style: .continuous)
                         .fill(category.color)
