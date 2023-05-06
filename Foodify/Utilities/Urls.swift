@@ -17,4 +17,5 @@ struct Urls {
     static let areaList = "\(baseUrl)/list.php?a=list"
     static let ingredientList = "\(baseUrl)/list.php?i=list"
     static let filter = "\(baseUrl)/filter.php"
+    static let lookup = "\(baseUrl)/lookup.php"
 }
