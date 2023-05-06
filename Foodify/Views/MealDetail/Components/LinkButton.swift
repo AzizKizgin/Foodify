@@ -8,13 +8,23 @@
 import SwiftUI
 
 struct LinkButton: View {
+    let link: String?
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct LinkButton_Previews: PreviewProvider {
-    static var previews: some View {
-        LinkButton()
+        if let link = link {
+            Button(action: {
+                if let url = URL(string: link) {
+                    UIApplication.shared.open(url)
+                }
+            }) {
+                Text("Open YouTube")
+                    .padding(15)
+                    .foregroundColor(.white)
+                    .font(.system(size: 17))
+                    .bold()
+            }
+            .background(Color(.red))
+            .cornerRadius(20)
+            .padding()
+        }
     }
 }
