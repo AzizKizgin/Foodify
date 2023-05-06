@@ -15,7 +15,7 @@ struct Meal: Codable, Identifiable {
     let instructions: String
     let image: String
     let tags: String?
-    let youtubeLink: String
+    let youtubeLink: String?
     let ingredient1: String?
     let ingredient2: String?
     let ingredient3: String?
