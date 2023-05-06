@@ -27,15 +27,16 @@ class AppViewModal: ObservableObject {
         }
     }
     
-    func searchMeal(name:String){
+    func searchMeal(name:String,completion: @escaping ([Meal]?, Error?) -> Void){
         mealService.searchMealByName(name: name){
             result, error in
             guard let meals = result else{
-                print(error!)
+                completion(nil, error)
                 return
             }
             DispatchQueue.main.async {
                 self.meals = meals
+                completion(meals,nil)
             }
         }
     }
