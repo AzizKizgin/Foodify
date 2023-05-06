@@ -33,18 +33,21 @@ struct MealDetail: View {
                                 .frame(maxWidth: .infinity,alignment: .leading)
                                 .bold()
                                 .font(.system(size: 25))
+                                .foregroundColor(.pink)
                             Text(meal.instructions)
+                            LinkButton(link: meal.youtubeLink)
                         }
-                        VStack{
+                        VStack(spacing:10){
                             Text("Ingredients")
+                                .foregroundColor(.pink)
                                 .bold()
-                                .font(.system(size: 20))
-
+                                .font(.system(size: 20)).frame(maxWidth: .infinity, alignment: .leading)
+                            Ingredients(meal: meal)
                         }
                         .padding(.vertical)
-                        .frame(maxWidth: .infinity,alignment: .leading)
                     }
                     .padding(20)
+                    
                 }
             }
         }.onAppear{
