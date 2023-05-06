@@ -18,6 +18,9 @@
 		E03D940429FE8B4300C9B80B /* CategoryApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03D940329FE8B4300C9B80B /* CategoryApiService.swift */; };
 		E03D940629FE8F7A00C9B80B /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03D940529FE8F7A00C9B80B /* Home.swift */; };
 		E03D940829FECB8A00C9B80B /* CategoryItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03D940729FECB8A00C9B80B /* CategoryItemList.swift */; };
+		E077D52D2A02E7C8001738A1 /* MealDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E077D52C2A02E7C8001738A1 /* MealDetail.swift */; };
+		E0A348EF2A06B73C008C32B9 /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A348EE2A06B73C008C32B9 /* Ingredients.swift */; };
+		E0A348F12A06C445008C32B9 /* LinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A348F02A06C445008C32B9 /* LinkButton.swift */; };
 		E0DB39B429FD8ECE00141EFA /* FoodifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB39B329FD8ECE00141EFA /* FoodifyApp.swift */; };
 		E0DB39B829FD8ECF00141EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0DB39B729FD8ECF00141EFA /* Assets.xcassets */; };
 		E0DB39BB29FD8ECF00141EFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0DB39BA29FD8ECF00141EFA /* Preview Assets.xcassets */; };
@@ -39,6 +42,9 @@
 		E03D940329FE8B4300C9B80B /* CategoryApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryApiService.swift; sourceTree = "<group>"; };
 		E03D940529FE8F7A00C9B80B /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		E03D940729FECB8A00C9B80B /* CategoryItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemList.swift; sourceTree = "<group>"; };
+		E077D52C2A02E7C8001738A1 /* MealDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetail.swift; sourceTree = "<group>"; };
+		E0A348EE2A06B73C008C32B9 /* Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
+		E0A348F02A06C445008C32B9 /* LinkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkButton.swift; sourceTree = "<group>"; };
 		E0DB39B029FD8ECE00141EFA /* Foodify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DB39B329FD8ECE00141EFA /* FoodifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodifyApp.swift; sourceTree = "<group>"; };
 		E0DB39B729FD8ECF00141EFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -86,6 +92,24 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		E0A348EC2A06B711008C32B9 /* MealDetail */ = {
+			isa = PBXGroup;
+			children = (
+				E0A348ED2A06B728008C32B9 /* Components */,
+				E077D52C2A02E7C8001738A1 /* MealDetail.swift */,
+			);
+			path = MealDetail;
+			sourceTree = "<group>";
+		};
+		E0A348ED2A06B728008C32B9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E0A348EE2A06B73C008C32B9 /* Ingredients.swift */,
+				E0A348F02A06C445008C32B9 /* LinkButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		E0DB39A729FD8ECE00141EFA = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +153,7 @@
 		E0DB39C429FD94B000141EFA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E0A348EC2A06B711008C32B9 /* MealDetail */,
 				E01BE4C82A01959100404A95 /* Home */,
 				E01BE4C52A01948400404A95 /* Components */,
 				E018EA3229FF121200248490 /* Meals.swift */,
@@ -249,6 +274,7 @@
 				E0DB39CC29FD9DC700141EFA /* MealApiService.swift in Sources */,
 				E018EA3129FEF62900248490 /* HexColor.swift in Sources */,
 				E0DB39CA29FD953C00141EFA /* Meal.swift in Sources */,
+				E0A348EF2A06B73C008C32B9 /* Ingredients.swift in Sources */,
 				E03D940029FE827A00C9B80B /* Urls.swift in Sources */,
 				E03D940629FE8F7A00C9B80B /* Home.swift in Sources */,
 				E03D940429FE8B4300C9B80B /* CategoryApiService.swift in Sources */,
@@ -257,6 +283,8 @@
 				E03D940829FECB8A00C9B80B /* CategoryItemList.swift in Sources */,
 				E01BE4D12A01A3EC00404A95 /* MealByCategory.swift in Sources */,
 				E0DB39B429FD8ECE00141EFA /* FoodifyApp.swift in Sources */,
+				E077D52D2A02E7C8001738A1 /* MealDetail.swift in Sources */,
+				E0A348F12A06C445008C32B9 /* LinkButton.swift in Sources */,
 				E03D940229FE8A0B00C9B80B /* Category.swift in Sources */,
 				E01BE4C72A01949800404A95 /* SearchBox.swift in Sources */,
 			);
