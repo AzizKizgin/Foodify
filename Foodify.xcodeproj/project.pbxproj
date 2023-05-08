@@ -21,6 +21,7 @@
 		E077D52D2A02E7C8001738A1 /* MealDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E077D52C2A02E7C8001738A1 /* MealDetail.swift */; };
 		E0A348EF2A06B73C008C32B9 /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A348EE2A06B73C008C32B9 /* Ingredients.swift */; };
 		E0A348F12A06C445008C32B9 /* LinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A348F02A06C445008C32B9 /* LinkButton.swift */; };
+		E0C596692A07C0A600AC43EF /* MealItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C596682A07C0A600AC43EF /* MealItem.swift */; };
 		E0DB39B429FD8ECE00141EFA /* FoodifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DB39B329FD8ECE00141EFA /* FoodifyApp.swift */; };
 		E0DB39B829FD8ECF00141EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0DB39B729FD8ECF00141EFA /* Assets.xcassets */; };
 		E0DB39BB29FD8ECF00141EFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0DB39BA29FD8ECF00141EFA /* Preview Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		E077D52C2A02E7C8001738A1 /* MealDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetail.swift; sourceTree = "<group>"; };
 		E0A348EE2A06B73C008C32B9 /* Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
 		E0A348F02A06C445008C32B9 /* LinkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkButton.swift; sourceTree = "<group>"; };
+		E0C596682A07C0A600AC43EF /* MealItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealItem.swift; sourceTree = "<group>"; };
 		E0DB39B029FD8ECE00141EFA /* Foodify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DB39B329FD8ECE00141EFA /* FoodifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodifyApp.swift; sourceTree = "<group>"; };
 		E0DB39B729FD8ECF00141EFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			children = (
 				E01BE4C62A01949800404A95 /* SearchBox.swift */,
 				E01BE4CC2A0196EA00404A95 /* Header.swift */,
+				E0C596682A07C0A600AC43EF /* MealItem.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			files = (
 				E018EA3329FF121200248490 /* Meals.swift in Sources */,
 				E01BE4CB2A0195B900404A95 /* CategoryList.swift in Sources */,
+				E0C596692A07C0A600AC43EF /* MealItem.swift in Sources */,
 				E0DB39CC29FD9DC700141EFA /* MealApiService.swift in Sources */,
 				E018EA3129FEF62900248490 /* HexColor.swift in Sources */,
 				E0DB39CA29FD953C00141EFA /* Meal.swift in Sources */,
