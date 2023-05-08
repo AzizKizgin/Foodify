@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct Home: View {
+
     @ObservedObject var appViewModal = AppViewModal()
     @State var searchText = ""
+    @State var meals:[Meal]?
     var body: some View {
         NavigationView{
             GeometryReader{
@@ -20,10 +22,28 @@ struct Home: View {
                         Header(safeAreaTop: safeAreaTop)
                     }
                     ScrollView{
-                        SearchBox(searchText: $searchText)
-                        CategoryList(categoryList: categoryItemList)
+                        SearchBox(searchText: $searchText,onSearch: onSearch)
+                        if let meals = meals, !searchText.isEmpty{
+                            ForEach(meals, id:\.id){
+                                meal in
+                                let color = categoryItemList.first(where: {$0.name == meal.category})?.color
+                                MealItem(meal: meal, color: color ?? .gray)
+                            }
+                        }else{
+                            CategoryList(categoryList: categoryItemList)
+                        }
                     }
                 }.edgesIgnoringSafeArea(.top)
+            }
+        }
+    }
+    func onSearch(text:String){
+        appViewModal.searchMeal(name: text) { result,error in
+            if error != nil {
+                meals = nil
+            }
+            else{
+                meals = result
             }
         }
     }
