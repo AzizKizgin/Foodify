@@ -12,15 +12,18 @@ struct FoodifyApp: App {
     @State var showSplash: Bool = true
     var body: some Scene {
         WindowGroup {
-            if(showSplash){
-                SplashView()
-                    .onAppear(
-                        perform: showApp
-                    )
+            VStack{
+                if(showSplash){
+                    SplashView()
+                        .onAppear(
+                            perform: showApp
+                        )
+                }
+                else {
+                    Home()
+                }
             }
-            else {
-                Home()
-            }
+            .animation(.easeIn(duration: 0.7),value: showSplash)
         }
     }
     
