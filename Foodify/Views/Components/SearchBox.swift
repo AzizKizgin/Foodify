@@ -36,7 +36,6 @@ struct SearchBox: View {
                             .debounce(for: .milliseconds(500), scheduler: DispatchQueue.main)
                     ) { debouncedSearchText in
                         onSearch(debouncedSearchText)
-                        print(debouncedSearchText)
                     }
             }
             .padding(.vertical,10)
