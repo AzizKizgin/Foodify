@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Meals: View {
     @ObservedObject var appViewModal = AppViewModal()
+    @State var searchedMeals: [MealByCategory] = []
     @State var searchText = ""
     let text : String
     let color: Color
@@ -17,7 +18,7 @@ struct Meals: View {
             ScrollView{
                 Text(text)
                 SearchBox(searchText: $searchText,onSearch: onSearch)
-                    ForEach(appViewModal.mealsByCategory){
+                ForEach(!searchedMeals.isEmpty ? searchedMeals : appViewModal.mealsByCategory){
                         meal in
                         NavigationLink(destination: MealDetail(id: meal.id)){
                             ZStack{
@@ -54,9 +55,9 @@ struct Meals: View {
         }
     }
     func onSearch(text: String){
-        
+        let filteredMeals = appViewModal.mealsByCategory.filter({$0.name.localizedCaseInsensitiveContains(text) })
+        searchedMeals = filteredMeals
     }
-    
 }
 
 
