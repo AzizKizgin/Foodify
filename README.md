@@ -9,19 +9,22 @@ Each recipe in Foodify comes with a detailed list of ingredients, step-by-step i
 So why settle for boring meals when you can unleash your inner chef with Foodify? Download the app now and start cooking up a storm!
 
 ##
-https://github.com/AzizKizgin/Foodify/assets/65086568/a15dffad-6c85-4cf3-bdef-b23098b9fdb1
+https://youtube.com/shorts/l3lJTEODOBk?feature=share
+
+##
+![foodifySplash](https://github.com/AzizKizgin/Foodify/assets/65086568/66dffb9b-e25c-4ed4-a4c7-0624399dff47)
 
 ## 
-![Simulator Screenshot - iPhone 14 Pro - 2023-05-13 at 15 28 35](https://github.com/AzizKizgin/Foodify/assets/65086568/ebf1e82e-5ebe-461e-899b-85e17148658c)
+![foodifyHome](https://github.com/AzizKizgin/Foodify/assets/65086568/65d2eb9d-6657-42a6-a7ea-728aae2855de)
 
 ##
-![Simulator Screenshot - iPhone 14 Pro - 2023-05-13 at 15 28 37](https://github.com/AzizKizgin/Foodify/assets/65086568/95134a42-c26e-4f84-8ee9-e28d8f036829)
+![foodifyMeals](https://github.com/AzizKizgin/Foodify/assets/65086568/7a6a0c2f-2848-4edd-8683-59f607d1f9ec)
 
 ##
-![Simulator Screenshot - iPhone 14 Pro - 2023-05-13 at 15 28 53](https://github.com/AzizKizgin/Foodify/assets/65086568/16bbba51-255f-471d-a94e-742ac7df4da8)
+![foodifyDetail](https://github.com/AzizKizgin/Foodify/assets/65086568/9660d65e-66f1-4733-877d-e5cb59c04243)
 
-##
-![Simulator Screenshot - iPhone 14 Pro - 2023-05-13 at 15 29 04](https://github.com/AzizKizgin/Foodify/assets/65086568/da0b3300-0ab6-461d-bd55-27eb12b61894)
+
+
 
 
 
